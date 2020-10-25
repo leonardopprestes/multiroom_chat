@@ -23,7 +23,7 @@ io.on('connection', function (socket) {
         if (parseInt(data.apelidoAtualizadoNosClientes) == 0) {
             socket.emit('ParticipantesParaCliente', { apelido : data.apelido } );
             socket.broadcast.emit('ParticipantesParaCliente', { apelido : data.apelido } );            
-        }
+        } 
     });
 
 });
